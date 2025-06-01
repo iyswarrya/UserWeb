@@ -2,6 +2,7 @@ package com.apex.user.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,6 +28,7 @@ public class UserInfoController{
     	this.userInfoService = userInfoService;
     }
     
+    
     @ModelAttribute("personalInfo")
     public PersonalInfo getPersonalInfo() {
         return new PersonalInfo();
@@ -42,6 +44,10 @@ public class UserInfoController{
         return new BankInfo();
     }
 
+    @GetMapping("/home.do")
+    public String homePage() {
+        return "home";  // This will also map to home.jsp
+    }
     
     @RequestMapping("/processPersonalInfo.do")
     private String handlePersonalInfo(@ModelAttribute PersonalInfo personalInfo, Model model) 
