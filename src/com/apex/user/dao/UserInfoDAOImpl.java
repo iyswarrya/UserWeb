@@ -9,7 +9,7 @@ import com.apex.user.vo.ContactInfo;
 import com.apex.user.vo.PersonalInfo;
 
 @Repository
-public class UserInfoDAOImpl {
+public class UserInfoDAOImpl implements UserInfoDAO{
 
 	@Autowired
     private JdbcTemplate jdbcTemplate;

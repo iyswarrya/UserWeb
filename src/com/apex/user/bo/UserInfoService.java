@@ -5,5 +5,5 @@ import com.apex.user.vo.ContactInfo;
 import com.apex.user.vo.PersonalInfo;
 
 public interface UserInfoService {
-	public void saveUserInfo(PersonalInfo personalInfo, ContactInfo contactInfo, BankInfo bankInfo); 
+	public void saveUserInfo(PersonalInfo personalInfo, ContactInfo contactInfo, BankInfo bankInfo) throws Exception; 
 }

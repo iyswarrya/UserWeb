@@ -1,5 +1,8 @@
 package com.apex.user.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class BankInfo {
     private String accountNo;
     private String bankName;

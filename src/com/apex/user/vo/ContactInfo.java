@@ -1,5 +1,8 @@
 package com.apex.user.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ContactInfo {
     private String address;
     private String city;

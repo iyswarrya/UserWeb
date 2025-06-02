@@ -1,5 +1,9 @@
 package com.apex.user.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component
+
 public class PersonalInfo {
     private String firstName;
     private String lastName;
